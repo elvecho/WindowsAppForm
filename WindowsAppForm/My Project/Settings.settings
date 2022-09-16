@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="BindingName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">VLLRulesInterfaceSoap</Value>
+    </Setting>
+    <Setting Name="EndPointAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://192.168.100.232/VLLWebServices/VLLRulesInterface.asmx</Value>
+    </Setting>
+    <Setting Name="CallWSDLAccountBalance" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Request" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;REQUEST version='2' externaldatabase=''&gt;&lt;LOGIN id='{0}' password='' type='NUMCARTE' /&gt;&lt;PARAM ope= 'WEB' verifyinput='1' updateflag= '1' /&gt;&lt;/REQUEST&gt;</Value>
+    </Setting>
+    <Setting Name="WSDLTimeout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5000</Value>
+    </Setting>
+    <Setting Name="EndPointAddressBackup" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="vllRequestLogin" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="vllRequestPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="newEndPointAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

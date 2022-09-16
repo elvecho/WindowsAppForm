@@ -1,0 +1,3856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/VLLWebServices/VLLRulesInterface" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/VLLWebServices/VLLRulesInterface" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/VLLWebServices/VLLRulesInterface">
+      <s:element name="GetLists">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetListsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstAddProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstAddProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LstAddProductResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstDelProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LstDelProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LstDelProductResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrxsWtoS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrxsWtoSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTrxsWtoSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrxWtoS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrxWtoSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTrxWtoSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateCampaign">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateCampaignResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateCampaignResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCampaign">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCampaignResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateCampaignResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampagne">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="iVersion" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCodeCampagne" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCodeLangue" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SOrg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SUser" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampagneResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCampagneResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateCampaignExt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateCampaignExtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateCampaignExtResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignExt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignExtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCampaignExtResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAvantage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="iVersion" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCodeAvantage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCodeLangue" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sOrg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAvantageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAvantageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAdvantageByProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sXmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAdvantageByProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAdvantageByProductResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAdvantageExt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAdvantageExtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateAdvantageExtResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAdvantageExt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAdvantageExtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAdvantageExtResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAdvantagePush">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sXmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAdvantagePushResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAdvantagePushResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UseAdvantagePush">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sXmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UseAdvantagePushResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UseAdvantagePushResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RefuseAdvantagePush">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sXmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RefuseAdvantagePushResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RefuseAdvantagePushResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCreateVoucher">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sXmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCreateVoucherResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCreateVoucherResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCreateMultipleVoucher">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sXmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCreateMultipleVoucherResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCreateMultipleVoucherResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModifyDateVouchers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sXmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModifyDateVouchersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ModifyDateVouchersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAdvantage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAdvantageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateAdvantageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateActionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateActionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateTrigger">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateTriggerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateTriggerResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateItemList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateItemListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateItemListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddItemList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddItemListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddItemListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateStoreList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateStoreListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateStoreListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAdvVoucher">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAdvVoucherResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateAdvVoucherResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAdvMessage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAdvMessageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateAdvMessageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAdvMessage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAdvMessageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateAdvMessageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateSAS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateSASResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateSASResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Subscribe">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubscribeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SubscribeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInfosAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInfosAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInfosAccountResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInfosCard">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInfosCardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInfosCardResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAccountBalance">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAccountBalanceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAccountBalanceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAccountBalanceDate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sXmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAccountBalanceDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAccountBalanceDateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrxHisto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrxHistoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTrxHistoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrxResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTrxResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateCard">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateCardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateCardResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCard">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateCardResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateAccountResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MergeAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MergeAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MergeAccountResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelVoucher">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelVoucherResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CancelVoucherResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TransfertCounter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TransfertCounterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TransfertCounterResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangeAccountStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangeAccountStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChangeAccountStatusResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangeCardStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangeCardStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChangeCardStatusResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangeCard">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangeCardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChangeCardResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMailing">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMailingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendMailingResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BalanceCorrection">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BalanceCorrectionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BalanceCorrectionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PurgeCompteur">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sXmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PurgeCompteurResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PurgeCompteurResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PurgeCompteurADate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sXmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PurgeCompteurADateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PurgeCompteurADateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ForgottenCard">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ForgottenCardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ForgottenCardResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ForgottenCardAndVouchers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ForgottenCardAndVouchersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ForgottenCardAndVouchersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSiteCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSiteCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSiteCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSiteCodes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSiteCodesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSiteCodesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTitles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTitlesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTitlesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCountries">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCountriesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCountriesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInfoChoice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInfoChoiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInfoChoiceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MultiCriteriaSearch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MultiCriteriaSearchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MultiCriteriaSearchResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MultiCriteriaTrxSearch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MultiCriteriaTrxSearchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MultiCriteriaTrxSearchResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyGenCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyGenCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerifyGenCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVoucher">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sXmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVoucherResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVoucherResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVouchers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVouchersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVouchersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVoucherImage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVoucherImageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVoucherImageResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPreviewVoucherImage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPreviewVoucherImageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPreviewVoucherImageResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCommRicheImage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCommRicheImageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCommRicheImageResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BurnVoucher">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BurnVoucherResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BurnVoucherResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UseVoucher">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UseVoucherResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UseVoucherResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VoucherExpiration">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sXmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VoucherExpirationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VoucherExpirationResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReprintVoucher">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReprintVoucherResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReprintVoucherResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHisto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHistoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHistoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSolde">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSoldeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSoldeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadGiftCard">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadGiftCardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadGiftCardResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInfoSupDesc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInfoSupDescResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInfoSupDescResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateAccountResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMeter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MeterId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMeterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMeterResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLoyaltyHistoByTrx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLoyaltyHistoByTrxResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLoyaltyHistoByTrxResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateSite">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateSiteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateSiteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSite">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSiteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateSiteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSite">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSiteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteSiteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSiteForCustBD">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSiteForCustBDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSiteForCustBDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLstSiteChild">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLstSiteChildResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLstSiteChildResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLstSiteMChild_Saas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLstSiteMChild_SaasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLstSiteMChild_SaasResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateFamily">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateFamilyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateFamilyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateFamily">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateFamilyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateFamilyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteFamily">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteFamilyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteFamilyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateProductResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateProductResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteProductResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetListsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLists" />
+  </wsdl:message>
+  <wsdl:message name="GetListsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetListsResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateListSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateList" />
+  </wsdl:message>
+  <wsdl:message name="CreateListSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateListResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteListSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteList" />
+  </wsdl:message>
+  <wsdl:message name="DeleteListSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteListResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateListSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateList" />
+  </wsdl:message>
+  <wsdl:message name="UpdateListSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateListResponse" />
+  </wsdl:message>
+  <wsdl:message name="LstAddProductSoapIn">
+    <wsdl:part name="parameters" element="tns:LstAddProduct" />
+  </wsdl:message>
+  <wsdl:message name="LstAddProductSoapOut">
+    <wsdl:part name="parameters" element="tns:LstAddProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="LstDelProductSoapIn">
+    <wsdl:part name="parameters" element="tns:LstDelProduct" />
+  </wsdl:message>
+  <wsdl:message name="LstDelProductSoapOut">
+    <wsdl:part name="parameters" element="tns:LstDelProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTrxsWtoSSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTrxsWtoS" />
+  </wsdl:message>
+  <wsdl:message name="GetTrxsWtoSSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTrxsWtoSResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTrxWtoSSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTrxWtoS" />
+  </wsdl:message>
+  <wsdl:message name="GetTrxWtoSSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTrxWtoSResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateCampaignSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateCampaign" />
+  </wsdl:message>
+  <wsdl:message name="CreateCampaignSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateCampaignResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCampaignSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCampaign" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCampaignSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCampaignResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCampagneSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCampagne" />
+  </wsdl:message>
+  <wsdl:message name="GetCampagneSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCampagneResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateCampaignExtSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateCampaignExt" />
+  </wsdl:message>
+  <wsdl:message name="CreateCampaignExtSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateCampaignExtResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignExtSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCampaignExt" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignExtSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCampaignExtResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAvantageSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAvantage" />
+  </wsdl:message>
+  <wsdl:message name="GetAvantageSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAvantageResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAdvantageByProductSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAdvantageByProduct" />
+  </wsdl:message>
+  <wsdl:message name="GetAdvantageByProductSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAdvantageByProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateAdvantageExtSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateAdvantageExt" />
+  </wsdl:message>
+  <wsdl:message name="CreateAdvantageExtSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateAdvantageExtResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAdvantageExtSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAdvantageExt" />
+  </wsdl:message>
+  <wsdl:message name="GetAdvantageExtSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAdvantageExtResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAdvantagePushSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAdvantagePush" />
+  </wsdl:message>
+  <wsdl:message name="GetAdvantagePushSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAdvantagePushResponse" />
+  </wsdl:message>
+  <wsdl:message name="UseAdvantagePushSoapIn">
+    <wsdl:part name="parameters" element="tns:UseAdvantagePush" />
+  </wsdl:message>
+  <wsdl:message name="UseAdvantagePushSoapOut">
+    <wsdl:part name="parameters" element="tns:UseAdvantagePushResponse" />
+  </wsdl:message>
+  <wsdl:message name="RefuseAdvantagePushSoapIn">
+    <wsdl:part name="parameters" element="tns:RefuseAdvantagePush" />
+  </wsdl:message>
+  <wsdl:message name="RefuseAdvantagePushSoapOut">
+    <wsdl:part name="parameters" element="tns:RefuseAdvantagePushResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCreateVoucherSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCreateVoucher" />
+  </wsdl:message>
+  <wsdl:message name="GetCreateVoucherSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCreateVoucherResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCreateMultipleVoucherSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCreateMultipleVoucher" />
+  </wsdl:message>
+  <wsdl:message name="GetCreateMultipleVoucherSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCreateMultipleVoucherResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModifyDateVouchersSoapIn">
+    <wsdl:part name="parameters" element="tns:ModifyDateVouchers" />
+  </wsdl:message>
+  <wsdl:message name="ModifyDateVouchersSoapOut">
+    <wsdl:part name="parameters" element="tns:ModifyDateVouchersResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateAdvantageSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateAdvantage" />
+  </wsdl:message>
+  <wsdl:message name="CreateAdvantageSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateAdvantageResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateActionSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateAction" />
+  </wsdl:message>
+  <wsdl:message name="CreateActionSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateActionResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateTriggerSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateTrigger" />
+  </wsdl:message>
+  <wsdl:message name="CreateTriggerSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateTriggerResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateItemListSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateItemList" />
+  </wsdl:message>
+  <wsdl:message name="CreateItemListSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateItemListResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddItemListSoapIn">
+    <wsdl:part name="parameters" element="tns:AddItemList" />
+  </wsdl:message>
+  <wsdl:message name="AddItemListSoapOut">
+    <wsdl:part name="parameters" element="tns:AddItemListResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateStoreListSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateStoreList" />
+  </wsdl:message>
+  <wsdl:message name="CreateStoreListSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateStoreListResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateAdvVoucherSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateAdvVoucher" />
+  </wsdl:message>
+  <wsdl:message name="CreateAdvVoucherSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateAdvVoucherResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateAdvMessageSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateAdvMessage" />
+  </wsdl:message>
+  <wsdl:message name="CreateAdvMessageSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateAdvMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAdvMessageSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAdvMessage" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAdvMessageSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAdvMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateSASSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateSAS" />
+  </wsdl:message>
+  <wsdl:message name="CreateSASSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateSASResponse" />
+  </wsdl:message>
+  <wsdl:message name="SubscribeSoapIn">
+    <wsdl:part name="parameters" element="tns:Subscribe" />
+  </wsdl:message>
+  <wsdl:message name="SubscribeSoapOut">
+    <wsdl:part name="parameters" element="tns:SubscribeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInfosAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInfosAccount" />
+  </wsdl:message>
+  <wsdl:message name="GetInfosAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInfosAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInfosCardSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInfosCard" />
+  </wsdl:message>
+  <wsdl:message name="GetInfosCardSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInfosCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAccountBalanceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAccountBalance" />
+  </wsdl:message>
+  <wsdl:message name="GetAccountBalanceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAccountBalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAccountBalanceDateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAccountBalanceDate" />
+  </wsdl:message>
+  <wsdl:message name="GetAccountBalanceDateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAccountBalanceDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTrxHistoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTrxHisto" />
+  </wsdl:message>
+  <wsdl:message name="GetTrxHistoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTrxHistoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTrxSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTrx" />
+  </wsdl:message>
+  <wsdl:message name="GetTrxSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTrxResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateCardSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateCard" />
+  </wsdl:message>
+  <wsdl:message name="CreateCardSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCardSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCard" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCardSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAccount" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="MergeAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:MergeAccount" />
+  </wsdl:message>
+  <wsdl:message name="MergeAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:MergeAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="CancelVoucherSoapIn">
+    <wsdl:part name="parameters" element="tns:CancelVoucher" />
+  </wsdl:message>
+  <wsdl:message name="CancelVoucherSoapOut">
+    <wsdl:part name="parameters" element="tns:CancelVoucherResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransfertCounterSoapIn">
+    <wsdl:part name="parameters" element="tns:TransfertCounter" />
+  </wsdl:message>
+  <wsdl:message name="TransfertCounterSoapOut">
+    <wsdl:part name="parameters" element="tns:TransfertCounterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangeAccountStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangeAccountStatus" />
+  </wsdl:message>
+  <wsdl:message name="ChangeAccountStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangeAccountStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangeCardStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangeCardStatus" />
+  </wsdl:message>
+  <wsdl:message name="ChangeCardStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangeCardStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangeCardSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangeCard" />
+  </wsdl:message>
+  <wsdl:message name="ChangeCardSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangeCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendMailingSoapIn">
+    <wsdl:part name="parameters" element="tns:SendMailing" />
+  </wsdl:message>
+  <wsdl:message name="SendMailingSoapOut">
+    <wsdl:part name="parameters" element="tns:SendMailingResponse" />
+  </wsdl:message>
+  <wsdl:message name="BalanceCorrectionSoapIn">
+    <wsdl:part name="parameters" element="tns:BalanceCorrection" />
+  </wsdl:message>
+  <wsdl:message name="BalanceCorrectionSoapOut">
+    <wsdl:part name="parameters" element="tns:BalanceCorrectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="PurgeCompteurSoapIn">
+    <wsdl:part name="parameters" element="tns:PurgeCompteur" />
+  </wsdl:message>
+  <wsdl:message name="PurgeCompteurSoapOut">
+    <wsdl:part name="parameters" element="tns:PurgeCompteurResponse" />
+  </wsdl:message>
+  <wsdl:message name="PurgeCompteurADateSoapIn">
+    <wsdl:part name="parameters" element="tns:PurgeCompteurADate" />
+  </wsdl:message>
+  <wsdl:message name="PurgeCompteurADateSoapOut">
+    <wsdl:part name="parameters" element="tns:PurgeCompteurADateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ForgottenCardSoapIn">
+    <wsdl:part name="parameters" element="tns:ForgottenCard" />
+  </wsdl:message>
+  <wsdl:message name="ForgottenCardSoapOut">
+    <wsdl:part name="parameters" element="tns:ForgottenCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="ForgottenCardAndVouchersSoapIn">
+    <wsdl:part name="parameters" element="tns:ForgottenCardAndVouchers" />
+  </wsdl:message>
+  <wsdl:message name="ForgottenCardAndVouchersSoapOut">
+    <wsdl:part name="parameters" element="tns:ForgottenCardAndVouchersResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSiteCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSiteCode" />
+  </wsdl:message>
+  <wsdl:message name="GetSiteCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSiteCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSiteCodesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSiteCodes" />
+  </wsdl:message>
+  <wsdl:message name="GetSiteCodesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSiteCodesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTitlesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTitles" />
+  </wsdl:message>
+  <wsdl:message name="GetTitlesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTitlesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCountriesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCountries" />
+  </wsdl:message>
+  <wsdl:message name="GetCountriesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCountriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoChoiceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInfoChoice" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoChoiceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInfoChoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="MultiCriteriaSearchSoapIn">
+    <wsdl:part name="parameters" element="tns:MultiCriteriaSearch" />
+  </wsdl:message>
+  <wsdl:message name="MultiCriteriaSearchSoapOut">
+    <wsdl:part name="parameters" element="tns:MultiCriteriaSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="MultiCriteriaTrxSearchSoapIn">
+    <wsdl:part name="parameters" element="tns:MultiCriteriaTrxSearch" />
+  </wsdl:message>
+  <wsdl:message name="MultiCriteriaTrxSearchSoapOut">
+    <wsdl:part name="parameters" element="tns:MultiCriteriaTrxSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifyGenCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:VerifyGenCode" />
+  </wsdl:message>
+  <wsdl:message name="VerifyGenCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:VerifyGenCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVoucherSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVoucher" />
+  </wsdl:message>
+  <wsdl:message name="GetVoucherSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVoucherResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVouchersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVouchers" />
+  </wsdl:message>
+  <wsdl:message name="GetVouchersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVouchersResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVoucherImageSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVoucherImage" />
+  </wsdl:message>
+  <wsdl:message name="GetVoucherImageSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVoucherImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPreviewVoucherImageSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPreviewVoucherImage" />
+  </wsdl:message>
+  <wsdl:message name="GetPreviewVoucherImageSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPreviewVoucherImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCommRicheImageSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCommRicheImage" />
+  </wsdl:message>
+  <wsdl:message name="GetCommRicheImageSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCommRicheImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="BurnVoucherSoapIn">
+    <wsdl:part name="parameters" element="tns:BurnVoucher" />
+  </wsdl:message>
+  <wsdl:message name="BurnVoucherSoapOut">
+    <wsdl:part name="parameters" element="tns:BurnVoucherResponse" />
+  </wsdl:message>
+  <wsdl:message name="UseVoucherSoapIn">
+    <wsdl:part name="parameters" element="tns:UseVoucher" />
+  </wsdl:message>
+  <wsdl:message name="UseVoucherSoapOut">
+    <wsdl:part name="parameters" element="tns:UseVoucherResponse" />
+  </wsdl:message>
+  <wsdl:message name="VoucherExpirationSoapIn">
+    <wsdl:part name="parameters" element="tns:VoucherExpiration" />
+  </wsdl:message>
+  <wsdl:message name="VoucherExpirationSoapOut">
+    <wsdl:part name="parameters" element="tns:VoucherExpirationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReprintVoucherSoapIn">
+    <wsdl:part name="parameters" element="tns:ReprintVoucher" />
+  </wsdl:message>
+  <wsdl:message name="ReprintVoucherSoapOut">
+    <wsdl:part name="parameters" element="tns:ReprintVoucherResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHistoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHisto" />
+  </wsdl:message>
+  <wsdl:message name="GetHistoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHistoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSoldeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSolde" />
+  </wsdl:message>
+  <wsdl:message name="GetSoldeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSoldeResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadGiftCardSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadGiftCard" />
+  </wsdl:message>
+  <wsdl:message name="LoadGiftCardSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadGiftCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoSupDescSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInfoSupDesc" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoSupDescSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInfoSupDescResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateAccount" />
+  </wsdl:message>
+  <wsdl:message name="CreateAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMeterSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMeter" />
+  </wsdl:message>
+  <wsdl:message name="GetMeterSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMeterResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLoyaltyHistoByTrxSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLoyaltyHistoByTrx" />
+  </wsdl:message>
+  <wsdl:message name="GetLoyaltyHistoByTrxSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLoyaltyHistoByTrxResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateSiteSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateSite" />
+  </wsdl:message>
+  <wsdl:message name="CreateSiteSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateSiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSiteSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateSite" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSiteSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateSiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSiteSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteSite" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSiteSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteSiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSiteForCustBDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSiteForCustBD" />
+  </wsdl:message>
+  <wsdl:message name="GetSiteForCustBDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSiteForCustBDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLstSiteChildSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLstSiteChild" />
+  </wsdl:message>
+  <wsdl:message name="GetLstSiteChildSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLstSiteChildResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLstSiteMChild_SaasSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLstSiteMChild_Saas" />
+  </wsdl:message>
+  <wsdl:message name="GetLstSiteMChild_SaasSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLstSiteMChild_SaasResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateFamilySoapIn">
+    <wsdl:part name="parameters" element="tns:CreateFamily" />
+  </wsdl:message>
+  <wsdl:message name="CreateFamilySoapOut">
+    <wsdl:part name="parameters" element="tns:CreateFamilyResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateFamilySoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateFamily" />
+  </wsdl:message>
+  <wsdl:message name="UpdateFamilySoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateFamilyResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteFamilySoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteFamily" />
+  </wsdl:message>
+  <wsdl:message name="DeleteFamilySoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteFamilyResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateProductSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateProduct" />
+  </wsdl:message>
+  <wsdl:message name="CreateProductSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateProductSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateProduct" />
+  </wsdl:message>
+  <wsdl:message name="UpdateProductSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteProductSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteProduct" />
+  </wsdl:message>
+  <wsdl:message name="DeleteProductSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteProductResponse" />
+  </wsdl:message>
+  <wsdl:portType name="VLLRulesInterfaceSoap">
+    <wsdl:operation name="GetLists">
+      <wsdl:input message="tns:GetListsSoapIn" />
+      <wsdl:output message="tns:GetListsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateList">
+      <wsdl:input message="tns:CreateListSoapIn" />
+      <wsdl:output message="tns:CreateListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteList">
+      <wsdl:input message="tns:DeleteListSoapIn" />
+      <wsdl:output message="tns:DeleteListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateList">
+      <wsdl:input message="tns:UpdateListSoapIn" />
+      <wsdl:output message="tns:UpdateListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LstAddProduct">
+      <wsdl:input message="tns:LstAddProductSoapIn" />
+      <wsdl:output message="tns:LstAddProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LstDelProduct">
+      <wsdl:input message="tns:LstDelProductSoapIn" />
+      <wsdl:output message="tns:LstDelProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrxsWtoS">
+      <wsdl:input message="tns:GetTrxsWtoSSoapIn" />
+      <wsdl:output message="tns:GetTrxsWtoSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrxWtoS">
+      <wsdl:input message="tns:GetTrxWtoSSoapIn" />
+      <wsdl:output message="tns:GetTrxWtoSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateCampaign">
+      <wsdl:input message="tns:CreateCampaignSoapIn" />
+      <wsdl:output message="tns:CreateCampaignSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCampaign">
+      <wsdl:input message="tns:UpdateCampaignSoapIn" />
+      <wsdl:output message="tns:UpdateCampaignSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCampagne">
+      <wsdl:input message="tns:GetCampagneSoapIn" />
+      <wsdl:output message="tns:GetCampagneSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateCampaignExt">
+      <wsdl:input message="tns:CreateCampaignExtSoapIn" />
+      <wsdl:output message="tns:CreateCampaignExtSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignExt">
+      <wsdl:input message="tns:GetCampaignExtSoapIn" />
+      <wsdl:output message="tns:GetCampaignExtSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAvantage">
+      <wsdl:input message="tns:GetAvantageSoapIn" />
+      <wsdl:output message="tns:GetAvantageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAdvantageByProduct">
+      <wsdl:input message="tns:GetAdvantageByProductSoapIn" />
+      <wsdl:output message="tns:GetAdvantageByProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAdvantageExt">
+      <wsdl:input message="tns:CreateAdvantageExtSoapIn" />
+      <wsdl:output message="tns:CreateAdvantageExtSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAdvantageExt">
+      <wsdl:input message="tns:GetAdvantageExtSoapIn" />
+      <wsdl:output message="tns:GetAdvantageExtSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAdvantagePush">
+      <wsdl:input message="tns:GetAdvantagePushSoapIn" />
+      <wsdl:output message="tns:GetAdvantagePushSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UseAdvantagePush">
+      <wsdl:input message="tns:UseAdvantagePushSoapIn" />
+      <wsdl:output message="tns:UseAdvantagePushSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RefuseAdvantagePush">
+      <wsdl:input message="tns:RefuseAdvantagePushSoapIn" />
+      <wsdl:output message="tns:RefuseAdvantagePushSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCreateVoucher">
+      <wsdl:input message="tns:GetCreateVoucherSoapIn" />
+      <wsdl:output message="tns:GetCreateVoucherSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCreateMultipleVoucher">
+      <wsdl:input message="tns:GetCreateMultipleVoucherSoapIn" />
+      <wsdl:output message="tns:GetCreateMultipleVoucherSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyDateVouchers">
+      <wsdl:input message="tns:ModifyDateVouchersSoapIn" />
+      <wsdl:output message="tns:ModifyDateVouchersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAdvantage">
+      <wsdl:input message="tns:CreateAdvantageSoapIn" />
+      <wsdl:output message="tns:CreateAdvantageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAction">
+      <wsdl:input message="tns:CreateActionSoapIn" />
+      <wsdl:output message="tns:CreateActionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateTrigger">
+      <wsdl:input message="tns:CreateTriggerSoapIn" />
+      <wsdl:output message="tns:CreateTriggerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateItemList">
+      <wsdl:input message="tns:CreateItemListSoapIn" />
+      <wsdl:output message="tns:CreateItemListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddItemList">
+      <wsdl:input message="tns:AddItemListSoapIn" />
+      <wsdl:output message="tns:AddItemListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateStoreList">
+      <wsdl:input message="tns:CreateStoreListSoapIn" />
+      <wsdl:output message="tns:CreateStoreListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAdvVoucher">
+      <wsdl:input message="tns:CreateAdvVoucherSoapIn" />
+      <wsdl:output message="tns:CreateAdvVoucherSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAdvMessage">
+      <wsdl:input message="tns:CreateAdvMessageSoapIn" />
+      <wsdl:output message="tns:CreateAdvMessageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAdvMessage">
+      <wsdl:input message="tns:UpdateAdvMessageSoapIn" />
+      <wsdl:output message="tns:UpdateAdvMessageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSAS">
+      <wsdl:input message="tns:CreateSASSoapIn" />
+      <wsdl:output message="tns:CreateSASSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Subscribe">
+      <wsdl:input message="tns:SubscribeSoapIn" />
+      <wsdl:output message="tns:SubscribeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInfosAccount">
+      <wsdl:input message="tns:GetInfosAccountSoapIn" />
+      <wsdl:output message="tns:GetInfosAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInfosCard">
+      <wsdl:input message="tns:GetInfosCardSoapIn" />
+      <wsdl:output message="tns:GetInfosCardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountBalance">
+      <wsdl:input message="tns:GetAccountBalanceSoapIn" />
+      <wsdl:output message="tns:GetAccountBalanceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountBalanceDate">
+      <wsdl:input message="tns:GetAccountBalanceDateSoapIn" />
+      <wsdl:output message="tns:GetAccountBalanceDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrxHisto">
+      <wsdl:input message="tns:GetTrxHistoSoapIn" />
+      <wsdl:output message="tns:GetTrxHistoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrx">
+      <wsdl:input message="tns:GetTrxSoapIn" />
+      <wsdl:output message="tns:GetTrxSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateCard">
+      <wsdl:input message="tns:CreateCardSoapIn" />
+      <wsdl:output message="tns:CreateCardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCard">
+      <wsdl:input message="tns:UpdateCardSoapIn" />
+      <wsdl:output message="tns:UpdateCardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAccount">
+      <wsdl:input message="tns:UpdateAccountSoapIn" />
+      <wsdl:output message="tns:UpdateAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MergeAccount">
+      <wsdl:input message="tns:MergeAccountSoapIn" />
+      <wsdl:output message="tns:MergeAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelVoucher">
+      <wsdl:input message="tns:CancelVoucherSoapIn" />
+      <wsdl:output message="tns:CancelVoucherSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TransfertCounter">
+      <wsdl:input message="tns:TransfertCounterSoapIn" />
+      <wsdl:output message="tns:TransfertCounterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeAccountStatus">
+      <wsdl:input message="tns:ChangeAccountStatusSoapIn" />
+      <wsdl:output message="tns:ChangeAccountStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeCardStatus">
+      <wsdl:input message="tns:ChangeCardStatusSoapIn" />
+      <wsdl:output message="tns:ChangeCardStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeCard">
+      <wsdl:input message="tns:ChangeCardSoapIn" />
+      <wsdl:output message="tns:ChangeCardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMailing">
+      <wsdl:input message="tns:SendMailingSoapIn" />
+      <wsdl:output message="tns:SendMailingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BalanceCorrection">
+      <wsdl:input message="tns:BalanceCorrectionSoapIn" />
+      <wsdl:output message="tns:BalanceCorrectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PurgeCompteur">
+      <wsdl:input message="tns:PurgeCompteurSoapIn" />
+      <wsdl:output message="tns:PurgeCompteurSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PurgeCompteurADate">
+      <wsdl:input message="tns:PurgeCompteurADateSoapIn" />
+      <wsdl:output message="tns:PurgeCompteurADateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForgottenCard">
+      <wsdl:input message="tns:ForgottenCardSoapIn" />
+      <wsdl:output message="tns:ForgottenCardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForgottenCardAndVouchers">
+      <wsdl:input message="tns:ForgottenCardAndVouchersSoapIn" />
+      <wsdl:output message="tns:ForgottenCardAndVouchersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteCode">
+      <wsdl:input message="tns:GetSiteCodeSoapIn" />
+      <wsdl:output message="tns:GetSiteCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteCodes">
+      <wsdl:input message="tns:GetSiteCodesSoapIn" />
+      <wsdl:output message="tns:GetSiteCodesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTitles">
+      <wsdl:input message="tns:GetTitlesSoapIn" />
+      <wsdl:output message="tns:GetTitlesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCountries">
+      <wsdl:input message="tns:GetCountriesSoapIn" />
+      <wsdl:output message="tns:GetCountriesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoChoice">
+      <wsdl:input message="tns:GetInfoChoiceSoapIn" />
+      <wsdl:output message="tns:GetInfoChoiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MultiCriteriaSearch">
+      <wsdl:input message="tns:MultiCriteriaSearchSoapIn" />
+      <wsdl:output message="tns:MultiCriteriaSearchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MultiCriteriaTrxSearch">
+      <wsdl:input message="tns:MultiCriteriaTrxSearchSoapIn" />
+      <wsdl:output message="tns:MultiCriteriaTrxSearchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyGenCode">
+      <wsdl:input message="tns:VerifyGenCodeSoapIn" />
+      <wsdl:output message="tns:VerifyGenCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVoucher">
+      <wsdl:input message="tns:GetVoucherSoapIn" />
+      <wsdl:output message="tns:GetVoucherSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVouchers">
+      <wsdl:input message="tns:GetVouchersSoapIn" />
+      <wsdl:output message="tns:GetVouchersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVoucherImage">
+      <wsdl:input message="tns:GetVoucherImageSoapIn" />
+      <wsdl:output message="tns:GetVoucherImageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPreviewVoucherImage">
+      <wsdl:input message="tns:GetPreviewVoucherImageSoapIn" />
+      <wsdl:output message="tns:GetPreviewVoucherImageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCommRicheImage">
+      <wsdl:input message="tns:GetCommRicheImageSoapIn" />
+      <wsdl:output message="tns:GetCommRicheImageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BurnVoucher">
+      <wsdl:input message="tns:BurnVoucherSoapIn" />
+      <wsdl:output message="tns:BurnVoucherSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UseVoucher">
+      <wsdl:input message="tns:UseVoucherSoapIn" />
+      <wsdl:output message="tns:UseVoucherSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VoucherExpiration">
+      <wsdl:input message="tns:VoucherExpirationSoapIn" />
+      <wsdl:output message="tns:VoucherExpirationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReprintVoucher">
+      <wsdl:input message="tns:ReprintVoucherSoapIn" />
+      <wsdl:output message="tns:ReprintVoucherSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHisto">
+      <wsdl:input message="tns:GetHistoSoapIn" />
+      <wsdl:output message="tns:GetHistoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSolde">
+      <wsdl:input message="tns:GetSoldeSoapIn" />
+      <wsdl:output message="tns:GetSoldeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadGiftCard">
+      <wsdl:input message="tns:LoadGiftCardSoapIn" />
+      <wsdl:output message="tns:LoadGiftCardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoSupDesc">
+      <wsdl:input message="tns:GetInfoSupDescSoapIn" />
+      <wsdl:output message="tns:GetInfoSupDescSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAccount">
+      <wsdl:input message="tns:CreateAccountSoapIn" />
+      <wsdl:output message="tns:CreateAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMeter">
+      <wsdl:input message="tns:GetMeterSoapIn" />
+      <wsdl:output message="tns:GetMeterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLoyaltyHistoByTrx">
+      <wsdl:input message="tns:GetLoyaltyHistoByTrxSoapIn" />
+      <wsdl:output message="tns:GetLoyaltyHistoByTrxSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSite">
+      <wsdl:input message="tns:CreateSiteSoapIn" />
+      <wsdl:output message="tns:CreateSiteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSite">
+      <wsdl:input message="tns:UpdateSiteSoapIn" />
+      <wsdl:output message="tns:UpdateSiteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSite">
+      <wsdl:input message="tns:DeleteSiteSoapIn" />
+      <wsdl:output message="tns:DeleteSiteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteForCustBD">
+      <wsdl:input message="tns:GetSiteForCustBDSoapIn" />
+      <wsdl:output message="tns:GetSiteForCustBDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLstSiteChild">
+      <wsdl:input message="tns:GetLstSiteChildSoapIn" />
+      <wsdl:output message="tns:GetLstSiteChildSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLstSiteMChild_Saas">
+      <wsdl:input message="tns:GetLstSiteMChild_SaasSoapIn" />
+      <wsdl:output message="tns:GetLstSiteMChild_SaasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateFamily">
+      <wsdl:input message="tns:CreateFamilySoapIn" />
+      <wsdl:output message="tns:CreateFamilySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFamily">
+      <wsdl:input message="tns:UpdateFamilySoapIn" />
+      <wsdl:output message="tns:UpdateFamilySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFamily">
+      <wsdl:input message="tns:DeleteFamilySoapIn" />
+      <wsdl:output message="tns:DeleteFamilySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateProduct">
+      <wsdl:input message="tns:CreateProductSoapIn" />
+      <wsdl:output message="tns:CreateProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProduct">
+      <wsdl:input message="tns:UpdateProductSoapIn" />
+      <wsdl:output message="tns:UpdateProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProduct">
+      <wsdl:input message="tns:DeleteProductSoapIn" />
+      <wsdl:output message="tns:DeleteProductSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="VLLRulesInterfaceSoap" type="tns:VLLRulesInterfaceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetLists">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetLists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateList">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteList">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/DeleteList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateList">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/UpdateList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstAddProduct">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/LstAddProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstDelProduct">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/LstDelProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrxsWtoS">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetTrxsWtoS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrxWtoS">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetTrxWtoS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCampaign">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateCampaign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCampaign">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/UpdateCampaign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampagne">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetCampagne" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCampaignExt">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateCampaignExt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignExt">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetCampaignExt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvantage">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetAvantage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdvantageByProduct">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetAdvantageByProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAdvantageExt">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateAdvantageExt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdvantageExt">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetAdvantageExt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdvantagePush">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetAdvantagePush" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UseAdvantagePush">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/UseAdvantagePush" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefuseAdvantagePush">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/RefuseAdvantagePush" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreateVoucher">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetCreateVoucher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreateMultipleVoucher">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetCreateMultipleVoucher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyDateVouchers">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/ModifyDateVouchers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAdvantage">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateAdvantage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAction">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateAction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTrigger">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateTrigger" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateItemList">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateItemList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddItemList">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/AddItemList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateStoreList">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateStoreList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAdvVoucher">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateAdvVoucher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAdvMessage">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateAdvMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAdvMessage">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/UpdateAdvMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSAS">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateSAS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Subscribe">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/Subscribe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfosAccount">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetInfosAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfosCard">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetInfosCard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountBalance">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetAccountBalance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountBalanceDate">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetAccountBalanceDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrxHisto">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetTrxHisto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrx">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetTrx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCard">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateCard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCard">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/UpdateCard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAccount">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/UpdateAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MergeAccount">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/MergeAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelVoucher">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CancelVoucher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransfertCounter">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/TransfertCounter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeAccountStatus">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/ChangeAccountStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeCardStatus">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/ChangeCardStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeCard">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/ChangeCard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMailing">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/SendMailing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BalanceCorrection">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/BalanceCorrection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PurgeCompteur">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/PurgeCompteur" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PurgeCompteurADate">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/PurgeCompteurADate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForgottenCard">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/ForgottenCard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForgottenCardAndVouchers">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/ForgottenCardAndVouchers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteCode">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetSiteCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteCodes">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetSiteCodes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTitles">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetTitles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCountries">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetCountries" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoChoice">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetInfoChoice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MultiCriteriaSearch">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/MultiCriteriaSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MultiCriteriaTrxSearch">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/MultiCriteriaTrxSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyGenCode">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/VerifyGenCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVoucher">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetVoucher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVouchers">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetVouchers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVoucherImage">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetVoucherImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPreviewVoucherImage">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetPreviewVoucherImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCommRicheImage">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetCommRicheImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BurnVoucher">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/BurnVoucher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UseVoucher">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/UseVoucher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VoucherExpiration">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/VoucherExpiration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReprintVoucher">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/ReprintVoucher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHisto">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetHisto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSolde">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetSolde" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadGiftCard">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/LoadGiftCard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoSupDesc">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetInfoSupDesc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAccount">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMeter">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetMeter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoyaltyHistoByTrx">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetLoyaltyHistoByTrx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSite">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateSite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSite">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/UpdateSite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSite">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/DeleteSite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteForCustBD">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetSiteForCustBD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLstSiteChild">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetLstSiteChild" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLstSiteMChild_Saas">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetLstSiteMChild_Saas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateFamily">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateFamily" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFamily">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/UpdateFamily" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFamily">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/DeleteFamily" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateProduct">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProduct">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/UpdateProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProduct">
+      <soap:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/DeleteProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VLLRulesInterfaceSoap12" type="tns:VLLRulesInterfaceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetLists">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetLists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateList">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteList">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/DeleteList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateList">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/UpdateList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstAddProduct">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/LstAddProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LstDelProduct">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/LstDelProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrxsWtoS">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetTrxsWtoS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrxWtoS">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetTrxWtoS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCampaign">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateCampaign" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCampaign">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/UpdateCampaign" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampagne">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetCampagne" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCampaignExt">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateCampaignExt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaignExt">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetCampaignExt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvantage">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetAvantage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdvantageByProduct">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetAdvantageByProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAdvantageExt">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateAdvantageExt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdvantageExt">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetAdvantageExt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdvantagePush">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetAdvantagePush" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UseAdvantagePush">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/UseAdvantagePush" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefuseAdvantagePush">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/RefuseAdvantagePush" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreateVoucher">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetCreateVoucher" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreateMultipleVoucher">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetCreateMultipleVoucher" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyDateVouchers">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/ModifyDateVouchers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAdvantage">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateAdvantage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAction">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateAction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTrigger">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateTrigger" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateItemList">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateItemList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddItemList">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/AddItemList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateStoreList">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateStoreList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAdvVoucher">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateAdvVoucher" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAdvMessage">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateAdvMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAdvMessage">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/UpdateAdvMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSAS">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateSAS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Subscribe">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/Subscribe" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfosAccount">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetInfosAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfosCard">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetInfosCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountBalance">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetAccountBalance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountBalanceDate">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetAccountBalanceDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrxHisto">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetTrxHisto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrx">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetTrx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCard">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCard">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/UpdateCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAccount">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/UpdateAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MergeAccount">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/MergeAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelVoucher">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CancelVoucher" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransfertCounter">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/TransfertCounter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeAccountStatus">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/ChangeAccountStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeCardStatus">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/ChangeCardStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeCard">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/ChangeCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMailing">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/SendMailing" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BalanceCorrection">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/BalanceCorrection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PurgeCompteur">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/PurgeCompteur" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PurgeCompteurADate">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/PurgeCompteurADate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForgottenCard">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/ForgottenCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForgottenCardAndVouchers">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/ForgottenCardAndVouchers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteCode">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetSiteCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteCodes">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetSiteCodes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTitles">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetTitles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCountries">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetCountries" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoChoice">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetInfoChoice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MultiCriteriaSearch">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/MultiCriteriaSearch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MultiCriteriaTrxSearch">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/MultiCriteriaTrxSearch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyGenCode">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/VerifyGenCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVoucher">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetVoucher" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVouchers">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetVouchers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVoucherImage">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetVoucherImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPreviewVoucherImage">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetPreviewVoucherImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCommRicheImage">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetCommRicheImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BurnVoucher">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/BurnVoucher" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UseVoucher">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/UseVoucher" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VoucherExpiration">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/VoucherExpiration" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReprintVoucher">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/ReprintVoucher" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHisto">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetHisto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSolde">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetSolde" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadGiftCard">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/LoadGiftCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoSupDesc">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetInfoSupDesc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAccount">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMeter">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetMeter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoyaltyHistoByTrx">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetLoyaltyHistoByTrx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSite">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateSite" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSite">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/UpdateSite" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSite">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/DeleteSite" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteForCustBD">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetSiteForCustBD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLstSiteChild">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetLstSiteChild" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLstSiteMChild_Saas">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/GetLstSiteMChild_Saas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateFamily">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateFamily" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFamily">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/UpdateFamily" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFamily">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/DeleteFamily" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateProduct">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/CreateProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProduct">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/UpdateProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProduct">
+      <soap12:operation soapAction="http://tempuri.org/VLLWebServices/VLLRulesInterface/DeleteProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VLLRulesInterface">
+    <wsdl:port name="VLLRulesInterfaceSoap" binding="tns:VLLRulesInterfaceSoap">
+      <soap:address location="http://192.168.100.232/VLLWebServices/VLLRulesInterface.asmx" />
+    </wsdl:port>
+    <wsdl:port name="VLLRulesInterfaceSoap12" binding="tns:VLLRulesInterfaceSoap12">
+      <soap12:address location="http://192.168.100.232/VLLWebServices/VLLRulesInterface.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
